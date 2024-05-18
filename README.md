@@ -8,8 +8,14 @@ Win32_smartdlg is a library for creating dynamic, pixel-less layouts in Win32 ap
 
 ## Getting Started
 ### Prerequisites
-- Windows: This library is designed for Windows applications.
+- Windows XP or newer: This library is designed for Windows applications.
+- ReactOS / Wine: For the purposes of this library, ReactOS and Wine are acceptable substitutes.
 - C++ Compiler: Ensure you have a C++ compiler that supports the Win32 API.
+
+### Dependencies
+By default, this project depends on the win32_utf8 library. You can find it here: https://github.com/thpatch/win32_utf8
+
+To include this dependency in your projects, replace `#include <windows.h>` with `#include <win32_utf8.h>` in your source files. If you do not wish to include Unicode support, simply reverse this change.
 
 ### Installation
 1. Clone the Repository: `git clone https://github.com/thpatch/win32_smartdlg`
